@@ -1,0 +1,84 @@
+.meetings-page {
+  padding: 2.5rem;
+}
+
+.meetings-page h2 {
+  margin-bottom: 1.5rem;
+}
+
+.meetings-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.2rem;
+}
+
+.meeting-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: transform 0.2s;
+}
+
+.meeting-card:hover {
+  transform: translateY(-4px);
+}
+
+.meeting-card h3 {
+  margin-bottom: 0.4rem;
+}
+
+.meeting-card button {
+  padding: 0.6rem 1rem;
+  border-radius: 0.6rem;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  background: linear-gradient(135deg,#667eea,#764ba2);
+  color: white;
+}
+
+.meeting-card button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+.empty {
+  color: #666;
+}
+
+.back-btn {
+  margin-top: 2rem;
+  background: none;
+  border: none;
+  color: #667eea;
+  font-weight: 600;
+  cursor: pointer;
+}
+.meeting-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.delete-btn {
+  background: #ef4444;
+  color: white;
+  border: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.delete-btn:hover {
+  background: #dc2626;
+}
+
+.creator {
+  font-size: 0.85rem;
+  color: #666;
+}
